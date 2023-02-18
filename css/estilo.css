@@ -134,19 +134,29 @@ textarea{
 }
 .button-default{
     background-color: #49bf9d;
-    border: 2px solid #49bf9d;
+    border: 3px solid #49bf9d;
     color: white;
     padding: .75em 1.5em;
     border-radius: 5px;
     font-size: .8em;
     display: inline-block;
     width: auto;
+    transition: all .4s;
+    cursor: pointer;
+}
+.button-default:hover{
+    background-color: #57d8b3;
 }
 
 .button-default-stroke{
     background-color: white;
     border-color: #efefef;
     color: inherit;
+}
+.button-default-stroke:hover{
+    color: #49bf9d;
+    border-color: #49bf9d;
+    background-color: white;
 }
 
 .button-default-small{
@@ -272,6 +282,23 @@ textarea{
     border-radius:5px;
 }
 
+.main-footer{
+    position: fixed;
+    bottom: 0px;
+    width: 35%;
+    left: 0;
+    padding: 124px 54px 72px 0;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.hidden{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: none;
+}
+
 /* Grid */
 .row{
     overflow: auto;
@@ -288,14 +315,22 @@ textarea{
     margin-left: 2%;
 }
 .col-2-3{
-    width: 65%;
+    width: 66%;
     float: left;
 }
 .col-1-3{
     width: 32%;
     float: left;
 }
-.col-1-3:nth-child(3n -1){
-    margin: 0 2%;
+.col-1-3:nth-child(3n -2){
+    margin-right:2%;
 }
+.col-1-3:nth-child(3n){
+    margin-left:2%;
+}
+
+.col-2-3 + .col-1-3, .col-1-3 + .col-2-3{
+    margin-left: 2%;
+}
+
 
