@@ -261,11 +261,15 @@ textarea{
 }
 
 .img-left{
-
+    float: left;
+    padding-right: 30px;
+    border-radius:5px;
 }
 
 .img-right{
-
+    float: right;
+    padding-left: 30px;
+    border-radius:5px;
 }
 
 /* Grid */
